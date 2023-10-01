@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    height: 100vh;
+    width: 100vw;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    height: 400px;
+    background-color: deeppink;
+    gap: 6px;
+    padding: 24px;
+}
+
+.img-container {
+    cursor: pointer;
+    flex: 1;
+    border: 2px solid black;
+    padding: 60px;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.selected {
+    border: 3px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+.result {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    height: 200px;
+    background-color: blanchedalmond;
+    margin-bottom: 20px;
+    gap: 60px;
+}
+
+.player,
+.computer {
+    display: flex;
+    height: 100%;
+    width: 48%;
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+.player img,
+.computer img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.plate {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    height: 40px;
+    font-size: 40px;
+    visibility: hidden;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.plate-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: rgb(26, 25, 25);
+}
+
+.round {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 800px;
+    height: 40px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.sound-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sound-btn i {
+    font-size: 20px;
+}
+
+.restart-btn {
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 30px;
+}
